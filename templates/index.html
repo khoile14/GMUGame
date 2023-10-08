@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workout Generator</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- You can link to an external CSS file here if needed -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GMU Game</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <h1>Workout Generator</h1>
-        </div>
+      <div class="header-container">
+        <h1>Retro Game Central</h1>
+        <hr />
+      </div>
     </header>
 
-    <main class="container">
-        <section class="content"> 
-            <div class="gender">
-                <label for="gender">Please select your gender</label>
-                <div class="dropdown">
-                    <button class="dropdown-button">Gender</button>
-                    <div class="dropdown-content">
-                        <a href="#">Male</a>
-                        <a href="#">Female</a>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+      <div class="first_row">
+        <div class="game">
+          <p>Minesweeper</p>
+          <img
+            src="static/minesweeper/minesweeper.jpg"
+            alt="minesweeper"
+            style="width: 155px; height: 150px"
+          />
+          <button
+            type="submit"
+            class="play_button"
+            id="submit-btn"
+            onclick="window.location.href='minesweeper.html'"
+          >
+            Play
+          </button>
+        </div>
 
-            <div class="age">
-                <label for="age">Please enter your age</label>
-                <input type="text" id="age" name="age">
-            </div>
-            
-            <!-- Add more form elements and content here as needed -->
-        </section>
-    </main>
+        <div class="game">
+          <p>Snake Game</p>
+          <img
+            src="static/snake/snake_game.jpg"
+            alt="snakegame"
+            style="width: 155px; height: 150px"
+          />
+          <button
+            type="submit"
+            class="play_button"
+            id="submit-btn"
+            onclick="window.location.href='snake.html'"
+          >
+            Play
+          </button>
+        </div>
 
-    <!-- Include any additional scripts or JavaScript files here if needed -->
-</body>
+        <div class="game">
+          <p>Sudoku</p>
+          <img
+            src="static/sudoku/sudoku.jpg"
+            alt="sudoku"
+            style="width: 155px; height: 150px"
+          />
+
+          <button
+            type="submit"
+            class="play_button"
+            id="submit-btn"
+            onclick="window.location.href='sudoku.html'"
+          >
+            Play
+          </button>
+        </div>
+
+        <div class="game">
+          <p>Tetris</p>
+          <img
+            src="static/tetris/tetris.png"
+            alt="tetris"
+            style="width: 155px; height: 150px"
+          />
+          <button
+            type="submit"
+            class="play_button"
+            id="submit-btn"
+            onclick="window.location.href='tetris.html'"
+          >
+            Play
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
